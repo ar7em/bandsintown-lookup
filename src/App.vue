@@ -1,28 +1,30 @@
 <template>
-  <div id="app">
-    <img src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="App">
+    <Search />
+    <Info>
+      <Events slot="events" />
+    </Info>
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+import Search from "components/Search.vue";
+import Info from "components/Info.vue";
+import Events from "components/Events.vue";
 
 export default {
   name: "app",
   components: {
-    HelloWorld
+    Search,
+    Info,
+    Events
   }
 };
 </script>
 
 <style lang="scss">
-#app {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.App {
+  padding: 50px;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
