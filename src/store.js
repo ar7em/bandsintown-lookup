@@ -1,5 +1,6 @@
 import Vue from "vue";
 import Vuex from "vuex";
+import createPersistedState from "vuex-persistedstate";
 import axios from "axios";
 import debounce from "lodash/debounce";
 
@@ -18,6 +19,7 @@ const escapeName = (name = "") => {
 };
 
 export default new Vuex.Store({
+  plugins: [createPersistedState()],
   state: {
     artist: "",
     infoFetching: false,

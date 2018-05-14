@@ -22,7 +22,7 @@ export default {
   },
   computed: {
     ...mapState({
-      value: state => state.requestedArtist,
+      value: state => state.artist,
       fetching: state => state.infoFetching
     })
   },
