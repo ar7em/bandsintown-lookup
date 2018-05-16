@@ -7,10 +7,11 @@ module.exports = {
     "^.+\\.jsx?$": "babel-jest"
   },
   moduleNameMapper: {
-    "^@/(.*)$": "<rootDir>/src/$1"
+    "^components/(.*)$": "<rootDir>/src/components/$1"
   },
   snapshotSerializers: ["jest-serializer-vue"],
   testMatch: [
-    "<rootDir>/(tests/unit/**/*.spec.(ts|tsx|js)|**/__tests__/*.(ts|tsx|js))"
-  ]
+    "<rootDir>/(tests/**/*.spec.(ts|tsx|js)|**/__tests__/*.(ts|tsx|js))"
+  ],
+  setupTestFrameworkScriptFile: "<rootDir>/tests/runner.js"
 };

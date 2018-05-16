@@ -4,6 +4,9 @@ module.exports = {
     "plugin:vue/essential",
     "@vue/prettier"
   ],
+  "parserOptions": {
+    "ecmaVersion": 2017
+  },
   "env": {
     "node": true
   },

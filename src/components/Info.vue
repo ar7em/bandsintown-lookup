@@ -57,8 +57,6 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import "~vue-material/dist/theme/engine";
-
 .Info {
   &__band.md-card {
     display: inline-block;
