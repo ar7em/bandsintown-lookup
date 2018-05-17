@@ -18,7 +18,7 @@ const escapeName = (name = "") => {
     .replace(/"'/g, "%27C");
 };
 
-export default new Vuex.Store({
+export const config = {
   plugins: [createPersistedState()],
   state: {
     artist: "",
@@ -107,4 +107,6 @@ export default new Vuex.Store({
         });
     }, 1000)
   }
-});
+};
+
+export default new Vuex.Store(config);

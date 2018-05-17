@@ -1,6 +1,6 @@
 import Vuex from "vuex";
 import { mount } from "@vue/test-utils";
-import Search from "components/Search.vue";
+import Search from "src/components/Search.vue";
 
 describe("Search.vue", () => {
   let store;

@@ -1,6 +1,6 @@
 import Vuex from "vuex";
 import { shallow } from "@vue/test-utils";
-import Info from "components/Info.vue";
+import Info from "src/components/Info.vue";
 
 describe("Info.vue", () => {
   let store;

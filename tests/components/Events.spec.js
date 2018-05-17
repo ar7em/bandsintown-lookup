@@ -1,6 +1,6 @@
 import Vuex from "vuex";
 import { mount, shallow } from "@vue/test-utils";
-import Events from "components/Events.vue";
+import Events from "src/components/Events.vue";
 
 describe("Events.vue", () => {
   let store;
@@ -19,7 +19,7 @@ describe("Events.vue", () => {
     });
   });
 
-  it("displays spinner while fetching", async () => {
+  it("displays spinner while fetching", () => {
     const wrapper = mount(Events, {
       store
     });
