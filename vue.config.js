@@ -8,5 +8,6 @@ module.exports = {
         components: path.join(__dirname, "src", "components")
       }
     }
-  }
+  },
+  outputDir: path.resolve(__dirname, "docs")
 };
