@@ -67,7 +67,7 @@ export default {
     text-align: center;
   }
 
-  &__actions {
+  &__actions.md-card-actions {
     justify-content: center;
   }
 

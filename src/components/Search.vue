@@ -45,7 +45,8 @@ export default {
     flex-shrink: 0;
   }
 
-  &__input.md-input {
+  .md-field &__input.md-input,
+  .md-field.md-has-value &__input.md-input {
     font-size: 100px;
     height: auto;
   }
