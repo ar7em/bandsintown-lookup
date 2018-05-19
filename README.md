@@ -16,3 +16,9 @@ yarn build
 git commit -m 'Update'
 git push
 ```
+
+### Test
+To run unit tests:
+```
+yarn test
+```

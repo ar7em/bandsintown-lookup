@@ -2,6 +2,9 @@ const path = require("path");
 
 module.exports = {
   configureWebpack: {
+    output: {
+      publicPath: "./"
+    },
     resolve: {
       extensions: [".js", ".vue", ".json"],
       alias: {

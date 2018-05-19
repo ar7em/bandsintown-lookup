@@ -9,15 +9,18 @@
         <md-card-header>
           <md-card-header-text>
             <div class="md-title">{{ info.name }}</div>
-            <div class="md-subhead">
-                <slot name="events"></slot>
-            </div>
           </md-card-header-text>
         </md-card-header>
 
-        <md-card-actions v-if="info.facebook_page_url">
-          <md-button :href="info.facebook_page_url" target="_blank">See on Facebook</md-button>
+        <md-card-actions v-if="info.facebook_page_url" class="Info__actions">
+          <md-button :href="info.facebook_page_url" target="_blank" class="md-dense md-raised md-primary">
+            See on Facebook
+          </md-button>
         </md-card-actions>
+
+        <md-card-content>
+          <slot name="events"></slot>
+        </md-card-content>
       </md-card-media-cover>
     </md-card>
   </div>
@@ -62,6 +65,10 @@ export default {
     display: inline-block;
     width: auto;
     text-align: center;
+  }
+
+  &__actions {
+    justify-content: center;
   }
 
   &__cover {
